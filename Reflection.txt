@@ -1,0 +1,9 @@
+Manuel Yafte Gallegos Lopez A01702980
+
+What made it easier for you to implement the view? 
+-> GridLayout, because thats the way i work with web development
+
+What made it difficult for you to implement the view?
+-> I coud not do it with other layouts
+-> I also struggled with scroll view
+-> I did not know how Grid Layout worked , so I spent huge amount of time researching
