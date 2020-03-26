@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:padding="8dp"
+        android:rowCount="6"
+        android:background="@drawable/gradient_background">
+
+
+
+        <TextView
+            android:id="@+id/pokemon_name_detail"
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="4"
+            android:fontFamily="@font/carter_one"
+            android:text="text"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/pokemon_number"
+            android:layout_width="395dp"
+            android:layout_columnSpan="4"
+            android:fontFamily="@font/carter_one"
+            android:text="text"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/front"
+            android:layout_width="202dp"
+            android:layout_height="185dp"
+            android:layout_columnSpan="2"
+            app:srcCompat="@drawable/pokemon_logo_min" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="192dp"
+            android:layout_height="185dp"
+            android:layout_columnSpan="2"
+            app:srcCompat="@drawable/pokemon_logo_min" />
+
+
+        <TextView
+            android:layout_width="395dp"
+            android:layout_columnSpan="4"
+            android:fontFamily="@font/carter_one"
+            android:text="Types:"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="395dp"
+            android:layout_columnSpan="4"
+            android:fontFamily="@font/carter_one"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="395dp"
+            android:layout_columnSpan="4"
+            android:fontFamily="@font/carter_one"
+            android:text="Moves:"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/moves_view"
+            android:layout_width="395dp"
+            android:layout_columnSpan="4"
+            android:fontFamily="@font/carter_one"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:layout_width="395dp"
+            android:layout_columnSpan="4"
+            android:fontFamily="@font/carter_one"
+            android:text="Stats:"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/stats_view"
+            android:layout_width="395dp"
+            android:layout_columnSpan="4"
+            android:fontFamily="@font/carter_one"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+    </GridLayout>
+</ScrollView>

@@ -1,18 +1,21 @@
 package com.test.pokedex.Adapters
 
 import android.content.Context
-import android.util.Log
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject
 import com.koushikdutta.ion.Ion
+import com.test.pokedex.Activities.ActivityList
+import com.test.pokedex.Activities.ActivityPokemonDetail
 import com.test.pokedex.R
 
 class AdapterList:RecyclerView.Adapter<AdapterList.ViewHolder>() {
@@ -61,6 +64,12 @@ class AdapterList:RecyclerView.Adapter<AdapterList.ViewHolder>() {
                                     .placeholder(R.drawable.pokemon_logo_min)
                                     .error(R.drawable.pokemon_logo_min)
                                     .into(imagePokemon);
+                                imagePokemon.setOnClickListener {
+                                  //  println("FUNCIONA, IDEA MILLONARIA")
+                                    var intent = Intent(it.context, ActivityPokemonDetail::class.java)
+                                    intent.putExtra("result", result.toString())
+                                    context.startActivity(intent)
+                                }
                             }else{
                                 imagePokemon.setImageDrawable(ContextCompat.getDrawable(context,R.drawable.pokemon_logo_min))
                             }
